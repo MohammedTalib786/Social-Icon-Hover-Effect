@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+.cont {
+    width: 100%;
+    /* margin-left: 10%; */
+    height: 100vh;
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+
+
+
+
+}
+
+
+
+img {
+    width: 8%;
+    cursor: pointer;
+    filter: invert(50%);
+    transition: .4s;
+
+
+}
+
+img:hover {
+    transform: translateY(-12px);
+}
+
+img:first-child:hover {
+    filter: invert(36%) sepia(35%) saturate(778%) hue-rotate(182deg) brightness(88%) contrast(100%);
+
+}
+
+img:nth-child(2):hover {
+    filter: invert(29%) sepia(85%) saturate(4948%) hue-rotate(319deg) brightness(89%) contrast(86%);
+}
+
+
+img:nth-child(3):hover {
+    filter: invert(68%) sepia(72%) saturate(5725%) hue-rotate(165deg) brightness(100%) contrast(106%);
+}
+
+
+img:nth-child(4):hover {
+    filter: invert(6%) sepia(8%) saturate(381%) hue-rotate(316deg) brightness(92%) contrast(94%);
+}
+
+img:nth-child(5):hover {
+    filter: invert(36%) sepia(67%) saturate(3169%) hue-rotate(340deg) brightness(77%) contrast(99%);
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.51rem;
+    }
+
+    img {
+        width: 20%;
+
+    }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    img {
+        width: 19%;
+
+    }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .cont {
+        column-gap: 2.5rem;
+
+    }
+
+    img {
+        width: 11%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .cont {
+        column-gap: 4rem;
+
+    }
+
+    img {
+        width: 10%;
+    }
+}
